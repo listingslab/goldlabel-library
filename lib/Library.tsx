@@ -6,10 +6,10 @@ import React from "react"
 //   WrapState,
 // } from "../goldlabel"
 
-export default function Wrap(props: any) {
+export default function Library(props: any) {
   const {children} = props
 
   return <>
-{children}
-          </>
+          {children}
+        </>
 }

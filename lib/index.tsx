@@ -1,5 +1,5 @@
-import {Wrap} from "./Wrap"
+import Library from "./Library"
 
 export {
-    Wrap,
+    Library,
 }

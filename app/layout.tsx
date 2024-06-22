@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import {Wrap} from "../lib";
+import {Library} from "../lib";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Wrap>
+        <Library>
           {children}
-        </Wrap>
+        </Library>
       </body>
     </html>
   );
