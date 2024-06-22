@@ -2,11 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import {Library} from "../lib";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Goldlabel Library",
-  description: "Isomorphic set of React features with NextJS",
+  description: "Isomorphic library of React features with NextJS",
 };
 
 export default function RootLayout({
@@ -17,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <Library>
+          {children}
+        </Library>
       </body>
     </html>
   );
