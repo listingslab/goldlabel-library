@@ -15,11 +15,9 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 export { db };
 
-
 export default function Library(props: any) {
-
   const {children} = props
-  console.log("inititalise Library app")
+  console.log("init Library")
   return <>
           {children}
         </>
