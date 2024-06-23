@@ -2,7 +2,7 @@ export interface AppStateProps {
   vs?: string;
   user: UserProps | null;
   authorising: boolean;
-  notification: Notification | null;
+  notification: NotificationProps | null;
 }
 
 export interface UserProps {
@@ -14,22 +14,22 @@ export interface ContentProps {
   title: string;
   description: string;
   path: string;
-  img?: ImgShape;
+  img?: ImageProps;
 }
 
-export interface ImgShape {
+export interface ImageProps {
   src: string;
   alt: string;
   caption?: string;
   icon?: string;
 }
 
-export type KeyValueShape = {
+export type KeyValueProps = {
   key: string;
   value: any;
 };
 
-export type Notification = {
+export type NotificationProps = {
   code: string;
   severity: 'success' | 'info' | 'warning' | 'error' | undefined;
   message: string;

@@ -1,5 +1,5 @@
 import { store } from '../';
-import { setGoldlabelKey } from '../';
+import { setLibraryKey } from '../';
 import { validateEmail } from '../../../lib/validateEmail';
 
 export const updateSignin =
@@ -18,7 +18,7 @@ export const updateSignin =
             valid: validEmail,
           },
         };
-        dispatch(setGoldlabelKey({ key: 'signinForm', value: update }));
+        dispatch(setLibraryKey({ key: 'signinForm', value: update }));
       }
 
       if (key === 'password') {
@@ -30,7 +30,7 @@ export const updateSignin =
             valid: password.value !== '',
           },
         };
-        dispatch(setGoldlabelKey({ key: 'signinForm', value: update }));
+        dispatch(setLibraryKey({ key: 'signinForm', value: update }));
       }
 
       // if (email.valid && password.valid) {
@@ -38,7 +38,7 @@ export const updateSignin =
       //     ...signinForm,
       //     valid: true,
       //   };
-      //   dispatch(setGoldlabelKey({ key: 'signinForm', value: update }));
+      //   dispatch(setLibraryKey({ key: 'signinForm', value: update }));
       // }
     } catch (e: any) {
       console.log('updateSignin 500', e.toString());

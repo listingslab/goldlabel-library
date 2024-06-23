@@ -1,13 +1,13 @@
 // import { store } from '../';
-import { setGoldlabelKey } from '../';
+import { setLibraryKey } from '../';
 
 export const updateUser =
   (user: any): any =>
   async (dispatch: any) => {
     try {
       if (!user) {
-        dispatch(setGoldlabelKey({ key: 'user', value: null }));
-        dispatch(setGoldlabelKey({ key: 'authorising', value: false }));
+        dispatch(setLibraryKey({ key: 'user', value: null }));
+        dispatch(setLibraryKey({ key: 'authorising', value: false }));
         return;
       }
       const updatedUser: any = {};
@@ -21,8 +21,8 @@ export const updateUser =
         updatedUser.createdAt = user.metadata.createdAt;
         updatedUser.lastLoginAt = user.metadata.lastLoginAt;
       }
-      dispatch(setGoldlabelKey({ key: 'user', value: updatedUser }));
-      dispatch(setGoldlabelKey({ key: 'authorising', value: false }));
+      dispatch(setLibraryKey({ key: 'user', value: updatedUser }));
+      dispatch(setLibraryKey({ key: 'authorising', value: false }));
     } catch (e: any) {
       console.log('updateUser 500', e.toString());
     }

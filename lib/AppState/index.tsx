@@ -2,12 +2,9 @@ import { store } from './store';
 import { useGoldlabelDispatch, useGoldlabelSelect } from './hooks';
 import {
   selectUser,
-  selectSigninForm,
-  selectNavDialogOpen,
-  setGoldlabelKey,
+  setLibraryKey,
   selectNotification,
   selectAuthorising,
-  selectContent,
 } from './reducer';
 import { toggleNavDialogOpen } from './actions/toggleNavDialogOpen';
 import { navigateTo } from './actions/navigateTo';
@@ -18,7 +15,7 @@ import { updateUser } from './actions/updateUser';
 
 export {
   store,
-  setGoldlabelKey,
+  setLibraryKey,
   useGoldlabelSelect,
   useGoldlabelDispatch,
   navigateTo,
@@ -29,8 +26,5 @@ export {
   updateSignin,
   selectNotification,
   selectAuthorising,
-  selectNavDialogOpen,
   selectUser,
-  selectSigninForm,
-  selectContent,
 };

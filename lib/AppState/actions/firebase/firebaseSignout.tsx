@@ -1,14 +1,14 @@
 import { getAuth, signOut } from 'firebase/auth';
-import { setGoldlabelKey } from '../../';
+import { setLibraryKey } from '../../';
 
 export const firebaseSignout = (): any => async (dispatch: any) => {
   try {
-    dispatch(setGoldlabelKey({ key: 'authorising', value: true }));
+    dispatch(setLibraryKey({ key: 'authorising', value: true }));
     const fBauth = getAuth();
     signOut(fBauth)
       .then(() => {
-        dispatch(setGoldlabelKey({ key: 'user', value: null }));
-        dispatch(setGoldlabelKey({ key: 'authorising', value: false }));
+        dispatch(setLibraryKey({ key: 'user', value: null }));
+        dispatch(setLibraryKey({ key: 'authorising', value: false }));
       })
       .catch((e) => {
         console.log('firebaseSignout 500', e);
