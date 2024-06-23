@@ -1,4 +1,4 @@
-import React from "react"
+// firebaseConfig.js
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
@@ -13,14 +13,5 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+
 export { db };
-
-
-export default function Library(props: any) {
-
-  const {children} = props
-  console.log("inititalise Library app")
-  return <>
-          {children}
-        </>
-}
