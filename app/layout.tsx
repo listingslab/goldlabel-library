@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import {Library} from "../lib";
+import {Library, PermaNav} from "../lib";
 
 export const metadata: Metadata = {
   title: "Goldlabel Library",
@@ -16,6 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Library>
+          <PermaNav />
           {children}
         </Library>
       </body>

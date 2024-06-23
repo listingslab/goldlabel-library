@@ -1,5 +1,8 @@
+"use client"; 
 import * as React from 'react';
+import { useRouter } from 'next/navigation';
 import {
+  Box,
   List,
   ListItemButton,
   ListItemText,
@@ -9,18 +12,22 @@ import { useLibraryDispatch } from '../AppState';
 // import { Icon } from '../Design';
 
 export default function PermaNav() {
-  const dispatch = useLibraryDispatch();
+  const router = useRouter();
 
-  const onItemClick = (path: string) => {
-    // dispatch(navigateTo(path, '_self'));
+  const onNavClick = (newRoute: string) => {
+    router.push(newRoute);
   };
 
   return (
     <>
-      <List>
+    <Box sx={{
+      border: "1px solid gold",
+    }}>
+      <List dense>
+
         <ListItemButton
           onClick={() => {
-            onItemClick('/');
+            onNavClick('/');
           }}
         >
           {/* <ListItemIcon>
@@ -29,7 +36,21 @@ export default function PermaNav() {
           <ListItemText primary="Home" />
         </ListItemButton>
 
+
+        <ListItemButton
+          onClick={() => {
+            onNavClick('/legal');
+          }}
+        >
+          {/* <ListItemIcon>
+            <Icon icon="home" color="primary" />
+          </ListItemIcon> */}
+          <ListItemText primary="Legal" />
+        </ListItemButton>
+
       </List>
+    </Box>
+      
     </>
   );
 }
