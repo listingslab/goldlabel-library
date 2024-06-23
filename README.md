@@ -1,4 +1,4 @@
-## Library
+## Goldlabel Library
 
 1. Get started
 
