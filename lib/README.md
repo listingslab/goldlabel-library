@@ -1,11 +1,19 @@
 ## Library
 
-Isomorphic React features with NextJS
+Isomorphic React features with NextJS. Wrapper component used as the entry point to the app. It inits a redux store, firebase settings etc
 
-### Components
+### Features
 
-#### Library  
+#### AppState
 
-Wrapper component used as the entry point to the app. It inits a redux store, firebase settings etc
+#### Firebase
+
+#### Design
+
+#### Geo
+
+#### Flash
+
+#### Forms
 
 #### Authorise
