@@ -1,3 +1,5 @@
+"use client"; 
+
 import React from "react"
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
@@ -12,7 +14,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-console.log("init firebase", firebaseConfig)
+// console.log("init firebase", firebaseConfig)
 const db = getFirestore(app);
 export { db };
 
