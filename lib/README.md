@@ -1,3 +1,19 @@
-## Goldlabel Library
+## Library
 
-Isomorphic set of React features with NextJS
+Isomorphic React features with NextJS. Wrapper component used as the entry point to the app. It inits a redux store, firebase settings etc
+
+### Features
+
+#### AppState
+
+#### Firebase
+
+#### Design
+
+#### Geo
+
+#### Flash
+
+#### Forms
+
+#### Authorise

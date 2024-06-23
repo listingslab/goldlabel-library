@@ -1,7 +1,4 @@
-"use client"; 
-import * as React from 'react';
-import { Provider } from 'react-redux';
-import { store } from './AppState';
+// Firebase/firebaseConfig.js
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
@@ -16,13 +13,5 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-export { db };
 
-export default function Library(props: any) {
-  const {children} = props
-  console.log("init Library")
-  return <>
-  hey
-          {children}
-        </>
-}
+export { db };
