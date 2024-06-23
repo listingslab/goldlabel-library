@@ -1,4 +1,0 @@
-## AppState
-
-store.ts
-
