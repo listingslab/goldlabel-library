@@ -16,7 +16,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Library>
-          <PermaNav />
           {children}
         </Library>
       </body>

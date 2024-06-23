@@ -3,6 +3,10 @@ import * as React from 'react';
 import {
   Box,
 } from '@mui/material';
+import {
+  useLibrarySelect,
+  selectSlice,
+} from "../AppState"
 
 export type LayoutProps = {
   type: "default" | "special"
@@ -12,6 +16,7 @@ export type LayoutProps = {
 
 export default function Layout(props: LayoutProps) {
   const { children, type} = props
+  const all = useLibrarySelect(selectSlice)
   return (
     <Box
       sx={{
@@ -19,6 +24,7 @@ export default function Layout(props: LayoutProps) {
       }}
     >
       {children}
+      <pre>all: {JSON.stringify(all, null, 2)}</pre>
     </Box>
   );
 }
