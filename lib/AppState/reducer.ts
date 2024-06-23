@@ -23,11 +23,11 @@ export const librarySlice = createSlice({
 });
 
 
-export const selectNotification = (state: RootState) => state.goldlabel.notification;
+export const selectNotification = (state: RootState) => state.notification;
 
-export const selectUser = (state: RootState) => state.goldlabel.user;
+export const selectUser = (state: RootState) => state.user;
 
-export const selectAuthorising = (state: RootState) => state.goldlabel.authorising;
+export const selectAuthorising = (state: RootState) => state.authorising;
 
 export const { setLibraryKey } = librarySlice.actions;
 
