@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import {Library, PermaNav} from "../lib";
 
 export const metadata: Metadata = {
-  title: "Goldlabel Library",
+  title: "Library",
   description: "Isomorphic library of React features with NextJS",
 };
 
