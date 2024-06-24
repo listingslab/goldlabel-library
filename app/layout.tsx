@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import {Library} from "../lib";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import {Library, PermaNav} from "../lib";
 
 export const metadata: Metadata = {
-  title: "Goldlabel Library",
+  title: "Library",
   description: "Isomorphic library of React features with NextJS",
 };
 
@@ -17,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Library>
           {children}
         </Library>

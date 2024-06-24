@@ -1,4 +1,4 @@
-## Goldlabel Library
+## Library
 
 1. Get started
 
@@ -8,6 +8,3 @@ git clone https://github.com/listingslab/goldlabel-library <project-name>
 cd <project-name>
 yarn & yarn dev
 ```
-
-2. Make first change
-

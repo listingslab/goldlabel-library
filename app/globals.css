@@ -2,14 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.libraryWrapper {
-  border: 1px solid red;
-  background-color: black;
-  z-index: 1000;
-  display: flex;
+pre {
+  font-size: 10px;
 }
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -37,4 +34,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

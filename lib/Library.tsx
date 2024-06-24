@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from './AppState';
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import {Layout} from "./Layout"
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -20,9 +21,9 @@ export { db };
 
 export default function Library(props: any) {
   const {children} = props
-  console.log("init Library")
-  return <>
-  hey
-          {children}
-        </>
+  return <Provider store={store}>
+          <Layout type={"default"}>
+            {children}
+          </Layout>
+        </Provider>
 }
