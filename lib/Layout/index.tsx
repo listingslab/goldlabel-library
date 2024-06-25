@@ -1,7 +1,9 @@
 import Layout from './Layout';
-import Default from './Default';
+import Desktop from './Desktop';
+import Mobile from './Mobile';
 
 export {
   Layout,
-  Default,
+  Desktop,
+  Mobile,
 };

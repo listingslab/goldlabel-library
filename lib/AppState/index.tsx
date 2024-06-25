@@ -10,7 +10,6 @@ import {
   setLibraryKey,
   selectNotification,
   selectAuthorising,
-  selectSlice,
 } from './reducer';
 
 export {
@@ -26,5 +25,4 @@ export {
   selectNotification,
   selectAuthorising,
   selectUser,
-  selectSlice,
 };

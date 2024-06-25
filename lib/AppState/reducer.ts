@@ -22,7 +22,6 @@ export const librarySlice = createSlice({
   },
 });
 
-export const selectSlice = (state: RootState) => state;
 export const selectNotification = (state: RootState) => state.notification;
 export const selectUser = (state: RootState) => state.user;
 export const selectAuthorising = (state: RootState) => state.authorising;
