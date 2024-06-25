@@ -77,7 +77,9 @@ const StyledFab = styled(Fab)({
   margin: '0 auto',
 });
 
-export default function Mobile() {
+export default function Mobile(props: any) {
+  const {children} = props
+  console.log("children", children)
   return (
     <React.Fragment>
       <CssBaseline />
