@@ -5,7 +5,7 @@ import {
 // import { useLibraryDispatch } from '../AppState';
 // import { Icon } from '../Design';
 
-export default function Default() {
+export default function Desktop() {
 
   return (
     <Box>

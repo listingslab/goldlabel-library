@@ -5,7 +5,7 @@ import {
 } from '@mui/material';
 import {
   useLibrarySelect,
-  selectSlice,
+  selectUser,
 } from "../AppState"
 
 export type LayoutProps = {
@@ -16,7 +16,7 @@ export type LayoutProps = {
 
 export default function Layout(props: LayoutProps) {
   const { children, type} = props
-  const all = useLibrarySelect(selectSlice)
+  const user = useLibrarySelect(selectUser)
   return (
     <Box
       sx={{
@@ -24,7 +24,7 @@ export default function Layout(props: LayoutProps) {
       }}
     >
       {children}
-      <pre>all: {JSON.stringify(all, null, 2)}</pre>
+      <pre>user: {JSON.stringify(user, null, 2)}</pre>
     </Box>
   );
 }
