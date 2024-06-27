@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import Image from 'next/image';
 
 export default function Page() {
-  const imgageWidth = 500;
+  const imgageWidth = 400;
   const imgageHeight = 200;
 
   return (
@@ -11,6 +11,7 @@ export default function Page() {
       <Typography variant="h2">News</Typography>
       <Image
         priority
+        layout="responsive"
         width={imgageWidth}
         height={imgageHeight}
         alt="drones with guns"
