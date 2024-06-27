@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 
 export default function Page() {
@@ -8,7 +8,6 @@ export default function Page() {
 
   return (
     <main>
-      <Typography variant="h2">Contact</Typography>
       <Image
         priority
         layout="responsive"
@@ -17,6 +16,8 @@ export default function Page() {
         alt="surprised"
         src="/webp/surprised.webp"
       />
+      <Box sx={{ height: 16 }} />
+      <Typography variant="h4">Contact</Typography>
     </main>
   );
 }

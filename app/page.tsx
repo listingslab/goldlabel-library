@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 
 export default function Page() {
@@ -16,6 +16,9 @@ export default function Page() {
         alt="Mc Job"
         src="/webp/mcjob.webp"
       />
+      <Box sx={{ height: 16 }} />
+      <Typography variant="h4">Hello</Typography>
+      <Box sx={{ height: 16 }} />
       <Typography variant="body2" gutterBottom>
         In Douglas Coupland&apos;s novel *Generation X: Tales for an Accelerated
         Culture*, a McJob refers to a low-paying, low-prestige, dead-end job

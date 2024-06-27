@@ -1,10 +1,13 @@
 import * as React from 'react';
+import { useRouter } from 'next/navigation';
 import {
   CssBaseline,
   Box,
   Container,
   IconButton,
+  Card,
   CardHeader,
+  CardContent,
   Avatar,
 } from '@mui/material';
 import { Icon } from '../Design';
@@ -12,14 +15,27 @@ import { BottomNavbar } from '../Nav';
 
 export default function Mobile(props: any) {
   const { children } = props;
+  const router = useRouter();
+
+  const onNavClick = (newRoute: string) => {
+    router.push(newRoute);
+  };
 
   return (
     <>
       <CssBaseline />
       <Container maxWidth="xs">
-        <Box sx={{ pb: '50px' }}>
+        <Card sx={{ pb: '50px' }}>
           <CardHeader
-            avatar={<Avatar src={'/svg/iOS.svg'} />}
+            avatar={
+              <IconButton
+                onClick={() => {
+                  onNavClick('/');
+                }}
+              >
+                <Avatar src={'/svg/characters/punk.svg'} />
+              </IconButton>
+            }
             title={'Title'}
             subheader={'subheader'}
             action={
@@ -28,10 +44,10 @@ export default function Mobile(props: any) {
               </IconButton>
             }
           />
-          {children}
-        </Box>
+          <CardContent>{children}</CardContent>
+        </Card>
+        <BottomNavbar />
       </Container>
-      <BottomNavbar />
     </>
   );
 }

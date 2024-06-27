@@ -46,6 +46,16 @@ export default function BottomNavbar() {
 
           <IconButton
             // color="primary"
+            aria-label="News"
+            onClick={() => {
+              onNavClick('/news');
+            }}
+          >
+            <Icon icon="notifyr" />
+          </IconButton>
+
+          <IconButton
+            // color="primary"
             aria-label="Contact"
             onClick={() => {
               onNavClick('/contact');
