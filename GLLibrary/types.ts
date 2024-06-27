@@ -5,6 +5,17 @@ export interface AppStateProps {
   user: UserProps | null;
   authorising: boolean;
   notification: NotificationProps | null;
+  newsfeed: NewsItemProps[];
+}
+
+export interface NewsItemProps {
+  id: string;
+  title: string;
+  subheader?: string;
+  action?: "internal-nav" | "external-nav",
+  route?: string;
+  image?: string;
+  icon?: string;
 }
 
 export interface UserProps {

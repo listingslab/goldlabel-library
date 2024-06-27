@@ -8,6 +8,16 @@ const initialState: AppStateProps = {
   user: null,
   authorising: true,
   notification: null,
+  newsfeed: [
+    {
+      id: "asda-12324-dajsgd-1244",
+      title: "News Item 1",
+      subheader: "news subheader 1",
+      action: "internal-nav",
+      route: "/news/news-item-1",
+      image: "/svg/characters/dapper.svg",
+    }
+  ],
 };
 
 export const librarySlice = createSlice({
@@ -25,5 +35,7 @@ export const librarySlice = createSlice({
 export const selectNotification = (state: RootState) => state.notification;
 export const selectUser = (state: RootState) => state.user;
 export const selectAuthorising = (state: RootState) => state.authorising;
+export const selectNewsfeed = (state: RootState) => state.newsfeed;
+
 export const { setLibraryKey } = librarySlice.actions;
 export default librarySlice.reducer;
