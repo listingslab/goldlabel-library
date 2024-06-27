@@ -16,7 +16,6 @@ export default function Page() {
         alt="Mc Job"
         src="/webp/coupland.webp"
       />
-      
     </main>
   );
 }

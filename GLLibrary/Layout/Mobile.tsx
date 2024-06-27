@@ -28,9 +28,7 @@ export default function Mobile(props: any) {
         <Card sx={{ pb: '50px' }}>
           <CardHeader
             title={'Goldlabel Library'}
-            subheader={
-              'Isomorphic React with NextJS, Redux, Firebase & more'
-            }
+            subheader={'Isomorphic React with NextJS, Redux, Firebase & more'}
             avatar={
               <IconButton
                 onClick={() => {
@@ -42,10 +40,11 @@ export default function Mobile(props: any) {
             }
             action={
               <IconButton
-                aria-label='Share'
+                aria-label="Share"
                 onClick={() => {
-                  console.log("Share")
-                }}>
+                  console.log('Share');
+                }}
+              >
                 <Icon icon="share" />
               </IconButton>
             }
