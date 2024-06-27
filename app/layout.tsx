@@ -1,3 +1,4 @@
+import * as React from 'react';
 import './globals.css';
 import type { Metadata } from 'next';
 import { GLLibrary } from '../GLLibrary';
