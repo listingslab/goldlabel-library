@@ -1,13 +1,7 @@
 'use client';
 import * as React from 'react';
 import { useRouter } from 'next/navigation';
-import {
-  Box,
-  List,
-  ListItemButton,
-  ListItemText,
-  ListItemIcon,
-} from '@mui/material';
+import { Box, List, ListItemButton, ListItemText } from '@mui/material';
 import { useLibraryDispatch } from '../AppState';
 // import { Icon } from '../Design';
 
