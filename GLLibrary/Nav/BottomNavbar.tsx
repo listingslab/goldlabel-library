@@ -1,12 +1,13 @@
 'use client';
 import * as React from 'react';
 import { useRouter } from 'next/navigation';
-import { Box, Toolbar, AppBar, IconButton } from '@mui/material';
-import { useLibraryDispatch } from '../AppState';
+import { useTheme, Box, Toolbar, AppBar, IconButton } from '@mui/material';
 import { Icon } from '../Design';
 
 export default function BottomNavbar() {
   const router = useRouter();
+  const theme = useTheme();
+  // console.log("theme", theme.palette.common.black);
 
   const onNavClick = (newRoute: string) => {
     router.push(newRoute);
@@ -18,6 +19,7 @@ export default function BottomNavbar() {
       sx={{
         top: 'auto',
         bottom: 0,
+        backgroundColor: theme.palette.common.black,
       }}
     >
       <Toolbar>
@@ -26,14 +28,30 @@ export default function BottomNavbar() {
           <IconButton
             // color="primary"
             aria-label="Home"
+            onClick={() => {
+              onNavClick('/');
+            }}
           >
             <Icon icon="home" />
           </IconButton>
           <IconButton
             // color="primary"
             aria-label="Legal"
+            onClick={() => {
+              onNavClick('/legal');
+            }}
           >
             <Icon icon="legal" />
+          </IconButton>
+
+          <IconButton
+            // color="primary"
+            aria-label="Contact"
+            onClick={() => {
+              onNavClick('/contact');
+            }}
+          >
+            <Icon icon="email" />
           </IconButton>
         </Box>
         <Box sx={{ flexGrow: 1 }} />
