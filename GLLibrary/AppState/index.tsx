@@ -10,6 +10,7 @@ import {
   setLibraryKey,
   selectNotification,
   selectAuthorising,
+  selectNewsfeed,
 } from './reducer';
 
 export {
@@ -25,4 +26,5 @@ export {
   selectNotification,
   selectAuthorising,
   selectUser,
+  selectNewsfeed,
 };

@@ -1,63 +1,58 @@
 import * as React from 'react';
+import { useRouter } from 'next/navigation';
 import {
-  styled,
   CssBaseline,
-  AppBar,
   Box,
   Container,
   IconButton,
-  Toolbar,
-  Fab,
+  Card,
   CardHeader,
+  CardContent,
   Avatar,
 } from '@mui/material';
 import { Icon } from '../Design';
-// import {DeathScroll} from "../Layout"
-
-const StyledFab = styled(Fab)({
-  position: 'absolute',
-  zIndex: 1,
-  top: -10,
-  // left: 0,
-  right: 10,
-  margin: '0 auto',
-});
+import { BottomNavbar } from '../Nav';
 
 export default function Mobile(props: any) {
   const { children } = props;
-  // console.log("children", children)
+  const router = useRouter();
+
+  const onNavClick = (newRoute: string) => {
+    router.push(newRoute);
+  };
+
   return (
     <>
       <CssBaseline />
-
       <Container maxWidth="xs">
-        <Box sx={{ pb: '50px', pt: '50px' }}>
+        <Card sx={{ pb: '50px' }}>
           <CardHeader
-            avatar={<Avatar src={'/svg/iOS.svg'} />}
-            title={'Title'}
-            subheader={'subheader'}
+            title={'Goldlabel Library'}
+            subheader={'Isomorphic React with NextJS, Redux, Firebase & more'}
+            avatar={
+              <IconButton
+                onClick={() => {
+                  onNavClick('/');
+                }}
+              >
+                <Avatar src={'/svg/gold.svg'} />
+              </IconButton>
+            }
             action={
-              <IconButton>
+              <IconButton
+                aria-label="Share"
+                onClick={() => {
+                  console.log('Share');
+                }}
+              >
                 <Icon icon="share" />
               </IconButton>
             }
           />
-
-          {children}
-        </Box>
+          <CardContent>{children}</CardContent>
+        </Card>
+        <BottomNavbar />
       </Container>
-
-      <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
-        <Toolbar>
-          <IconButton color="primary" aria-label="open drawer">
-            <Icon icon="settings" />
-          </IconButton>
-          <StyledFab color="primary" aria-label="add">
-            <Icon icon="up" />
-          </StyledFab>
-          <Box sx={{ flexGrow: 1 }} />
-        </Toolbar>
-      </AppBar>
     </>
   );
 }
