@@ -1,5 +1,5 @@
 // app/content/[slug]/page.js
-import { db } from '../../../lib/Firebase/firebaseConfig';
+import { db } from '../../../GLLibrary/Firebase/firebaseConfig';
 import { collection, getDocs, doc, getDoc } from 'firebase/firestore';
 import { notFound } from 'next/navigation';
 import Head from 'next/head';
