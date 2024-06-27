@@ -26,7 +26,7 @@ export default function BottomNavbar() {
         <Box sx={{ flexGrow: 1 }} />
         <Box>
           <IconButton
-            // color="primary"
+            color="primary"
             aria-label="Home"
             onClick={() => {
               onNavClick('/');
@@ -35,7 +35,7 @@ export default function BottomNavbar() {
             <Icon icon="home" />
           </IconButton>
           <IconButton
-            // color="primary"
+            color="primary"
             aria-label="Legal"
             onClick={() => {
               onNavClick('/legal');
@@ -45,23 +45,23 @@ export default function BottomNavbar() {
           </IconButton>
 
           <IconButton
-            // color="primary"
+            color="primary"
             aria-label="News"
             onClick={() => {
               onNavClick('/news');
             }}
           >
-            <Icon icon="notifyr" />
+            <Icon icon="news" />
           </IconButton>
 
           <IconButton
-            // color="primary"
+            color="primary"
             aria-label="Contact"
             onClick={() => {
               onNavClick('/contact');
             }}
           >
-            <Icon icon="email" />
+            <Icon icon="contact" />
           </IconButton>
         </Box>
         <Box sx={{ flexGrow: 1 }} />

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
+import { Icon } from '../../GLLibrary';
 
 export default function Page() {
   const imgageWidth = 400;
@@ -17,7 +18,8 @@ export default function Page() {
         src="/webp/surprised.webp"
       />
       <Box sx={{ height: 16 }} />
-      <Typography variant="h4">Contact</Typography>
+      <Typography variant="h5">Contact</Typography>
+      -- Form
     </main>
   );
 }

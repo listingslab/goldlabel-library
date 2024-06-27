@@ -18,7 +18,7 @@ export default function Page() {
         src="/webp/drones-with-guns.webp"
       />
       <Box sx={{ height: 16 }} />
-      <Typography variant="h4">Legal</Typography>
+      <Typography variant="h5">Legal</Typography>
       <Box sx={{ height: 16 }} />
       <Typography variant="body2" gutterBottom>
         Drones with guns. Like THAT's a good idea

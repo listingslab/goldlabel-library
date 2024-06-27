@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
+import { Icon } from '../../GLLibrary';
 
 export default function Page() {
   const imgageWidth = 400;
@@ -16,10 +17,19 @@ export default function Page() {
         alt="Drones with guns"
         src="/webp/mcjob.webp"
       />
+
       <Box sx={{ height: 16 }} />
-      <Typography variant="h4">News</Typography>
+      <Box sx={{ display: 'flex' }}>
+        <Box sx={{ m: 1 }}>
+          <Icon icon="news" />
+        </Box>
+        <Box sx={{ m: 0.5 }}>
+          <Typography variant="h5">News</Typography>
+        </Box>
+      </Box>
+
       <Box sx={{ height: 16 }} />
-      <Typography variant="body2" gutterBottom>
+      <Typography>
         In Douglas Coupland&apos;s novel *Generation X: Tales for an Accelerated
         Culture*, a McJob refers to a low-paying, low-prestige, dead-end job
         that requires few skills and offers little chance of advancement. The

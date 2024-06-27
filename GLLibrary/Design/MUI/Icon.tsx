@@ -1,3 +1,4 @@
+'use client';
 import * as React from 'react';
 import PingpongballIcon from './SVGIcons/PingpongballIcon';
 import OliverIcon from './SVGIcons/OliverIcon';
@@ -177,6 +178,7 @@ export type IconShape = {
     | 'ting'
     | 'settings'
     | 'email'
+    | 'contact'
     | 'share'
     | 'leaf'
     | 'star'
@@ -431,6 +433,9 @@ export default function Icon({ icon, color }: IconShape) {
     case 'email':
       iconFragment = <EmailIcon color={color} />;
       break;
+    case 'contact':
+      iconFragment = <EmailIcon color={color} />;
+      break;
     case 'share':
       iconFragment = <ShareIcon color={color} />;
       break;
@@ -454,9 +459,6 @@ export default function Icon({ icon, color }: IconShape) {
       break;
     case 'diving':
       iconFragment = <DivingIcon color={color} />;
-      break;
-    case 'news':
-      iconFragment = <NewsIcon color={color} />;
       break;
     case 'activities':
       iconFragment = <ActivitesIcon color={color} />;
@@ -565,6 +567,9 @@ export default function Icon({ icon, color }: IconShape) {
       break;
     case 'members':
       iconFragment = <AccountIcon color={color} />;
+      break;
+    case 'news':
+      iconFragment = <NotifyrIcon color={color} />;
       break;
     case 'notifyer':
       iconFragment = <NotifyrIcon color={color} />;

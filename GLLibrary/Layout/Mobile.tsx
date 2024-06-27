@@ -25,32 +25,33 @@ export default function Mobile(props: any) {
     <>
       <CssBaseline />
       <Container maxWidth="xs">
-        <Card sx={{ pb: '50px' }}>
+        <Box sx={{ pb: '50px' }}>
           <CardHeader
             title={'Goldlabel Library'}
-            subheader={'Isomorphic React with NextJS, Redux, Firebase & more'}
+            subheader={'Isomorphic React Components'}
             avatar={
               <IconButton
+                aria-label="Goldlabel Library Home"
                 onClick={() => {
                   onNavClick('/');
                 }}
               >
-                <Avatar src={'/svg/gold.svg'} />
+                <Avatar alt={'Goldlabel Library Home'} src={'/svg/gold.svg'} />
               </IconButton>
             }
-            action={
-              <IconButton
-                aria-label="Share"
-                onClick={() => {
-                  console.log('Share');
-                }}
-              >
-                <Icon icon="share" />
-              </IconButton>
-            }
+            // action={
+            //   <IconButton
+            //     aria-label="Share"
+            //     onClick={() => {
+            //       console.log('Share');
+            //     }}
+            //   >
+            //     <Icon icon="share" />
+            //   </IconButton>
+            // }
           />
           <CardContent>{children}</CardContent>
-        </Card>
+        </Box>
         <BottomNavbar />
       </Container>
     </>

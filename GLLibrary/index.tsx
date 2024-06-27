@@ -1,3 +1,4 @@
 import GLLibrary from './GLLibrary';
+import { Icon } from './Design';
 
-export { GLLibrary };
+export { GLLibrary, Icon };
