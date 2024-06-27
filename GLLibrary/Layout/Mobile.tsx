@@ -37,7 +37,7 @@ export default function Mobile(props: any) {
                   onNavClick('/');
                 }}
               >
-                <Avatar src={'/svg/icon_512.svg'} />
+                <Avatar src={'/svg/gold.svg'} />
               </IconButton>
             }
             action={

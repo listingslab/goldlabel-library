@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import * as React from 'react';
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
@@ -18,6 +19,10 @@ export default function Page() {
       />
       <Box sx={{ height: 16 }} />
       <Typography variant="h4">Legal</Typography>
+      <Box sx={{ height: 16 }} />
+      <Typography variant="body2" gutterBottom>
+        Drones with guns. Like THAT's a good idea
+      </Typography>
     </main>
   );
 }
