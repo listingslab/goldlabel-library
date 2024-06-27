@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <main>
         <Typography variant="h2">
-          Legal
+          News
         </Typography>
         <Image 
           priority
@@ -17,7 +17,7 @@ export default function Page() {
           height={imgageHeight}
           alt="drones with guns" 
           src="/webp/drones-with-guns.webp"
-        />
+      />
     </main>
   );
 }

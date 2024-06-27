@@ -9,15 +9,15 @@ export default function Page() {
   return (
     <main>
         <Typography variant="h2">
-          Legal
+          Contact
         </Typography>
         <Image 
           priority
           width={imgageWidth}
           height={imgageHeight}
-          alt="drones with guns" 
-          src="/webp/drones-with-guns.webp"
-        />
+          alt="surprised" 
+          src="/webp/surprised.webp"
+      />
     </main>
   );
 }
