@@ -24,7 +24,7 @@ export default function GLLibrary(props: any) {
   const {children} = props
   return <Provider store={store}>
           <MUI>
-            <Layout type={"default"}>
+            <Layout>
               {children}
             </Layout>
           </MUI>

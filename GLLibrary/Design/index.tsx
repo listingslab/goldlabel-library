@@ -1,2 +1,3 @@
 import {MUI} from './MUI';
-export { MUI };
+import Icon from "./MUI/Icon"
+export { MUI, Icon};

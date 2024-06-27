@@ -10,7 +10,7 @@ import {
 } from "./"
 
 export type LayoutProps = {
-  type: "default" | "special"
+  type?: "default" | "special"
   children?: React.ReactNode;
 }
 
