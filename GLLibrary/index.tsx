@@ -1,7 +1,5 @@
-import Library from "./Library"
-import {PermaNav} from "./Nav"
+import GLLibrary from "./GLLibrary"
 
 export {
-    Library,
-    PermaNav,
+    GLLibrary,
 }

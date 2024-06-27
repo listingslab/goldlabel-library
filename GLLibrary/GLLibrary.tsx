@@ -4,7 +4,8 @@ import { Provider } from 'react-redux';
 import { store } from './AppState';
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-import {Layout} from "./Layout"
+import { Layout } from "./Layout";
+import { MUI } from "./Design";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -19,11 +20,13 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 export { db };
 
-export default function Library(props: any) {
+export default function GLLibrary(props: any) {
   const {children} = props
   return <Provider store={store}>
-          <Layout type={"default"}>
-            {children}
-          </Layout>
+          <MUI>
+            <Layout type={"default"}>
+              {children}
+            </Layout>
+          </MUI>
         </Provider>
 }

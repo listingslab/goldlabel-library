@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import {Library} from "../GLLibrary";
+import {GLLibrary} from "../GLLibrary";
 
 export const metadata: Metadata = {
   title: "GLLibrary",
@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Library>
+        <GLLibrary>
           {children}
-        </Library>
+        </GLLibrary>
       </body>
     </html>
   );

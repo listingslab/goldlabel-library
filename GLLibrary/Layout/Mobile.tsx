@@ -84,8 +84,8 @@ export default function Mobile(props: any) {
     <React.Fragment>
       <CssBaseline />
       <Paper square sx={{ pb: '50px' }}>
-        <Typography variant="h5" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
-          Inbox
+        <Typography variant="h3" gutterBottom component="div" sx={{ p: 2, pb: 0 }}>
+          Death Scroll
         </Typography>
         <List sx={{ mb: 2 }}>
           {messages.map(({ id, primary, secondary, person }) => (

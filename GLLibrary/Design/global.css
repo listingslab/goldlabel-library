@@ -1,0 +1,27 @@
+/* 
+  While this file is not actually imported into the project,
+  it can be useful to see the colors here
+  */
+.primary {
+  color: #c09f52;
+}
+.secondary {
+  color: #937f50;
+}
+
+.success {
+  color: #c09f52;
+}
+.info {
+  color: #e2b54b;
+}
+.warning {
+  color: #ffb300;
+}
+.error {
+  color: #ee6c0e;
+}
+
+.gold {
+  color: #c09f52;
+}
