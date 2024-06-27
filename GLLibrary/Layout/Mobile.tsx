@@ -27,19 +27,25 @@ export default function Mobile(props: any) {
       <Container maxWidth="xs">
         <Card sx={{ pb: '50px' }}>
           <CardHeader
+            title={'Goldlabel Library'}
+            subheader={
+              'Isomorphic React with NextJS, Redux, Firebase & more'
+            }
             avatar={
               <IconButton
                 onClick={() => {
                   onNavClick('/');
                 }}
               >
-                <Avatar src={'/svg/characters/punk.svg'} />
+                <Avatar src={'/svg/iOS.svg'} />
               </IconButton>
             }
-            title={'Title'}
-            subheader={'subheader'}
             action={
-              <IconButton>
+              <IconButton
+                aria-label='Share'
+                onClick={() => {
+                  console.log("Share")
+                }}>
                 <Icon icon="share" />
               </IconButton>
             }
