@@ -13,14 +13,26 @@ export default function BottomNavbar() {
   };
 
   return (
-    <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+    <AppBar
+      position="fixed"
+      sx={{
+        top: 'auto',
+        bottom: 0,
+      }}
+    >
       <Toolbar>
         <Box sx={{ flexGrow: 1 }} />
         <Box>
-          <IconButton color="primary" aria-label="open drawer">
+          <IconButton
+            // color="primary"
+            aria-label="Home"
+          >
             <Icon icon="home" />
           </IconButton>
-          <IconButton color="primary" aria-label="open drawer">
+          <IconButton
+            // color="primary"
+            aria-label="Legal"
+          >
             <Icon icon="legal" />
           </IconButton>
         </Box>

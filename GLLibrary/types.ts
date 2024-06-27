@@ -12,7 +12,7 @@ export interface NewsItemProps {
   id: string;
   title: string;
   subheader?: string;
-  action?: "internal-nav" | "external-nav",
+  action?: 'internal-nav' | 'external-nav';
   route?: string;
   image?: string;
   icon?: string;

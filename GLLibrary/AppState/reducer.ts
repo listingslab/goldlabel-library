@@ -10,13 +10,13 @@ const initialState: AppStateProps = {
   notification: null,
   newsfeed: [
     {
-      id: "asda-12324-dajsgd-1244",
-      title: "News Item 1",
-      subheader: "news subheader 1",
-      action: "internal-nav",
-      route: "/news/news-item-1",
-      image: "/svg/characters/dapper.svg",
-    }
+      id: 'asda-12324-dajsgd-1244',
+      title: 'News Item 1',
+      subheader: 'news subheader 1',
+      action: 'internal-nav',
+      route: '/news/news-item-1',
+      image: '/svg/characters/dapper.svg',
+    },
   ],
 };
 

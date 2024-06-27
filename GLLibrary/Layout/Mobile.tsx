@@ -10,7 +10,6 @@ import {
 import { Icon } from '../Design';
 import { BottomNavbar } from '../Nav';
 
-
 export default function Mobile(props: any) {
   const { children } = props;
 
@@ -18,7 +17,7 @@ export default function Mobile(props: any) {
     <>
       <CssBaseline />
       <Container maxWidth="xs">
-        <Box sx={{ pb: '50px', pt: '50px' }}>
+        <Box sx={{ pb: '50px' }}>
           <CardHeader
             avatar={<Avatar src={'/svg/iOS.svg'} />}
             title={'Title'}
