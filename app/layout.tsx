@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import {Library} from "../lib";
+import {Library} from "../GLLibrary";
 
 export const metadata: Metadata = {
   title: "GLLibrary",
