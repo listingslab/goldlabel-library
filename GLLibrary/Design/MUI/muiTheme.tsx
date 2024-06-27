@@ -1,12 +1,8 @@
 'use client';
-import {
-  PaletteMode,
-} from '@mui/material';
+import { PaletteMode } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 
-export function muiTheme(
-  mode: PaletteMode,
-) {
+export function muiTheme(mode: PaletteMode) {
   return {
     palette: {
       mode,
@@ -29,6 +25,6 @@ export function muiTheme(
         main: '#ee6c0e',
       },
     },
-  }
+  };
 }
 export default muiTheme;

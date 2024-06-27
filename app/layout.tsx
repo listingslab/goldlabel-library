@@ -1,9 +1,10 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import {GLLibrary} from "../GLLibrary";
+import * as React from 'react';
+import './globals.css';
+import type { Metadata } from 'next';
+import { GLLibrary } from '../GLLibrary';
 
 export const metadata: Metadata = {
-  title: "GLLibrary",
+  title: 'GLLibrary',
   description: "Goldlabel's Isomorphic library of React features on NextJS",
 };
 
@@ -15,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <GLLibrary>
-          {children}
-        </GLLibrary>
+        <GLLibrary>{children}</GLLibrary>
       </body>
     </html>
   );
