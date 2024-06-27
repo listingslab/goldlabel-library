@@ -1,3 +1,5 @@
+// GLLibrary TypeScript
+
 export interface AppStateProps {
   vs?: string;
   user: UserProps | null;
