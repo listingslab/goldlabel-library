@@ -1,17 +1,16 @@
 import * as React from 'react';
 import {
-  Box,
-  Typography,
+  createTheme,
+  ThemeProvider,
 } from '@mui/material';
-// import { useLibraryDispatch } from '../AppState';
-// import { Icon } from '../Design';
+import muiTheme from "./muiTheme"
 
 export default function MUI(props: any) {
   const {children} = props;
-
+  const customTheme = muiTheme("dark")
   return (
-    <Box>
+    <ThemeProvider theme={createTheme(customTheme)}>
       {children}
-    </Box>
+    </ThemeProvider>
   );
 }
