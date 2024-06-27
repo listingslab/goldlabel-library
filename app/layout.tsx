@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <GLLibrary>{children}</GLLibrary>
+        <GLLibrary>
+          {children}
+        </GLLibrary>
       </body>
     </html>
   );
