@@ -11,7 +11,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export type DesktopProps = {
   children?: React.ReactNode;
-}
+};
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -56,7 +56,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 export default function Desktop(props: DesktopProps) {
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">

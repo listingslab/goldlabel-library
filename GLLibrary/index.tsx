@@ -1,5 +1,3 @@
-import GLLibrary from "./GLLibrary"
+import GLLibrary from './GLLibrary';
 
-export {
-    GLLibrary,
-}
+export { GLLibrary };

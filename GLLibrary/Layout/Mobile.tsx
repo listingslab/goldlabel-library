@@ -11,7 +11,7 @@ import {
   CardHeader,
   Avatar,
 } from '@mui/material';
-import {Icon} from "../Design"
+import { Icon } from '../Design';
 // import {DeathScroll} from "../Layout"
 
 const StyledFab = styled(Fab)({
@@ -24,18 +24,23 @@ const StyledFab = styled(Fab)({
 });
 
 export default function Mobile(props: any) {
-  const {children} = props
+  const { children } = props;
   // console.log("children", children)
-  return <>
+  return (
+    <>
       <CssBaseline />
-      
+
       <Container maxWidth="xs">
         <Box sx={{ pb: '50px', pt: '50px' }}>
           <CardHeader
-            avatar={<Avatar src={"/svg/iOS.svg"} />}
-            title={"Title"}
-            subheader={"subheader"}
-            action={<IconButton><Icon icon="share" /></IconButton>}
+            avatar={<Avatar src={'/svg/iOS.svg'} />}
+            title={'Title'}
+            subheader={'subheader'}
+            action={
+              <IconButton>
+                <Icon icon="share" />
+              </IconButton>
+            }
           />
 
           {children}
@@ -47,14 +52,12 @@ export default function Mobile(props: any) {
           <IconButton color="primary" aria-label="open drawer">
             <Icon icon="settings" />
           </IconButton>
-          <StyledFab 
-            color="primary"
-            aria-label="add">
+          <StyledFab color="primary" aria-label="add">
             <Icon icon="up" />
           </StyledFab>
           <Box sx={{ flexGrow: 1 }} />
         </Toolbar>
       </AppBar>
-
     </>
+  );
 }

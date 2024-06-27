@@ -1,4 +1,4 @@
-"use client"; 
+'use client';
 import * as React from 'react';
 import { useRouter } from 'next/navigation';
 import {
@@ -20,37 +20,35 @@ export default function PermaNav() {
 
   return (
     <>
-    <Box sx={{
-      border: "1px solid gold",
-    }}>
-      <List dense>
-
-        <ListItemButton
-          onClick={() => {
-            onNavClick('/');
-          }}
-        >
-          {/* <ListItemIcon>
+      <Box
+        sx={{
+          border: '1px solid gold',
+        }}
+      >
+        <List dense>
+          <ListItemButton
+            onClick={() => {
+              onNavClick('/');
+            }}
+          >
+            {/* <ListItemIcon>
             <Icon icon="home" color="primary" />
           </ListItemIcon> */}
-          <ListItemText primary="Home" />
-        </ListItemButton>
+            <ListItemText primary="Home" />
+          </ListItemButton>
 
-
-        <ListItemButton
-          onClick={() => {
-            onNavClick('/legal');
-          }}
-        >
-          {/* <ListItemIcon>
+          <ListItemButton
+            onClick={() => {
+              onNavClick('/legal');
+            }}
+          >
+            {/* <ListItemIcon>
             <Icon icon="home" color="primary" />
           </ListItemIcon> */}
-          <ListItemText primary="Legal" />
-        </ListItemButton>
-
-      </List>
-    </Box>
-      
+            <ListItemText primary="Legal" />
+          </ListItemButton>
+        </List>
+      </Box>
     </>
   );
 }
